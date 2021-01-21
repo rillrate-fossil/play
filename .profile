@@ -1,9 +1,11 @@
-bat --style=plain /play/README.md
+#source $HOME/.cargo/env
+
+mdcat /play/README.md
 
 function cd {
     builtin cd "$1"
     if [ -s "README.md" ]
     then
-        bat --style=plain README.md
+        mdcat README.md
     fi
 }
