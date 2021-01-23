@@ -1,5 +1,3 @@
-#source $HOME/.cargo/env
-
 mdcat /play/README.md
 
 function cd {
