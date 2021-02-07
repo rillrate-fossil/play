@@ -1,5 +1,7 @@
 FROM fedora:33
 
+ENV VERSION=v0.19.0
+
 RUN dnf update -y
 RUN dnf install -y python nodejs clang
 RUN curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python -

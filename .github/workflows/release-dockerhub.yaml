@@ -17,8 +17,15 @@ jobs:
         username: ${{ secrets.DOCKERHUB_USERNAME }}
         password: ${{ secrets.DOCKERHUB_TOKEN }}
 
+    - name: Set variables
+      run: |
+        VER=$(cat Dockerfile | grep "ENV VERSION" | sed "s/ENV VERSION=v//")
+        echo "image_version=$VER" >> $GITHUB_ENV
+
     - name: Build and push
       uses: docker/build-push-action@v2
       with:
         push: true
-        tags: rillrate/play:latest
+        tags: |
+          rillrate/play:${{ env.image_version }}
+          rillrate/play:latest
