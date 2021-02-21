@@ -1,4 +1,4 @@
-IMAGE="rillrate/play:0.17.0"
+IMAGE="rillrate/play:0.20.0"
 
 docker build -t $IMAGE .
 
