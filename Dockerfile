@@ -3,7 +3,7 @@ FROM fedora:33
 ENV VERSION=v0.20.0
 
 RUN dnf update -y
-RUN dnf install -y python nodejs clang
+RUN dnf install -y python nodejs clang vim
 RUN curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python -
 RUN curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y --default-toolchain stable
 

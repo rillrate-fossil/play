@@ -1,6 +1,6 @@
 {
   "name": "nodejs-example",
-  "version": "0.1.0",
+  "version": "0.20.0",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -9,6 +9,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@rillrate/rillrate": "^0.3.0"
+    "@rillrate/rillrate": "^0.20.0"
   }
 }
