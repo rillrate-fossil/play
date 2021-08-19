@@ -1,12 +1,12 @@
 [tool.poetry]
 name = "python-example"
-version = "0.21.0"
+version = "0.37.0-rc.4"
 description = ""
 authors = []
 
 [tool.poetry.dependencies]
 python = "^3.9"
-rillrate = "^0.21.0"
+rillrate = "^0.37.0-rc.4"
 
 [tool.poetry.dev-dependencies]
 

@@ -1,9 +1,9 @@
-mdcat /play/README.md
+cat /play/README.md
 
 function cd {
     builtin cd "$1"
     if [ -s "README.md" ]
     then
-        mdcat README.md
+        cat README.md
     fi
 }

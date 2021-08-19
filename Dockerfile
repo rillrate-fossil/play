@@ -11,7 +11,7 @@ RUN echo "source $HOME/.poetry/env" >> $HOME/.bashrc \
  && echo "source $HOME/.cargo/env" >> $HOME/.bashrc \
  && echo "source $HOME/.profile" >> $HOME/.bashrc
 
-RUN $HOME/.cargo/bin/cargo install mdcat
+# RUN $HOME/.cargo/bin/cargo install mdcat
 
 ENV RILLRATE_CONFIG=/play/rillrate.toml
 
