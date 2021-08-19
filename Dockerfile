@@ -1,6 +1,6 @@
-FROM fedora:33
+FROM fedora:34
 
-ENV VERSION=v0.21.0
+ENV VERSION=v0.34.0-rc.4
 
 RUN dnf update -y
 RUN dnf install -y python nodejs clang vim
